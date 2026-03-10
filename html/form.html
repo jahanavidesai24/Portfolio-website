@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Me</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/oform.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<div class="navigation">
+<a class="nav-button" href="home.html">Home</a>
+<a class="nav-button" href="projects.html">Projects</a>
+<a class="nav-button" href="about.html">About Me</a>
+<a class="nav-button" href="form.html" title="This leads you to Contact Page.">Contact Me</a>
+</div>
+
+<!-- Logo -->
+<a href="home.html">
+<img class="logo" src="../images/logo.png" alt="Website Logo">
+</a>
+
+<div class="clear"></div>
+
+<h1>Contact Me</h1>
+
+<p>Please fill out the form below and I will get back to you.</p>
+
+<form class="oform" name="cOrder" id="cOrder" method="post" action="thankyou.html">
+
+    <div class="form-row">
+        <label for="fName">First Name *</label>
+        <input type="text" id="fName" name="fName" required>
+    </div>
+
+    <div class="form-row">
+        <label for="lName">Last Name *</label>
+        <input type="text" id="lName" name="lName" required>
+    </div>
+
+    <div class="form-row">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-row">
+        <label for="street">Street Address *</label>
+        <input type="text" id="street" name="street" required>
+    </div>
+
+    <div class="form-row">
+        <label for="city">City *</label>
+        <input type="text" id="city" name="city" required>
+    </div>
+
+    <div class="form-row">
+        <label for="province">Province *</label>
+        <input type="text" id="province" name="province" required>
+    </div>
+
+    <div class="form-row">
+        <label for="poscode">Postal Code *</label>
+        <input type="text" id="poscode" name="poscode" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+    </div>
+
+    <div class="form-row">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </div>
+
+    <div class="form-row">
+        <label for="role">Select your role *</label>
+        <select id="role" name="role">
+            <option>Student</option>
+            <option>Parent</option>
+            <option>Dancer</option>
+            <option>Performer</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="form-row checkbox-row">
+        <label>
+            <input type="checkbox" name="contactplease">
+            Contact me please!
+        </label>
+    </div>
+
+    <div class="form-row">
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" rows="3"></textarea>
+    </div>
+
+    <div class="form-buttons">
+        <input type="submit" value="Submit Details">
+        <input type="reset" value="Cancel Details">
+    </div>
+
+</form>
+</div>
+
+<div class="portfolio-badge">
+Made by Jahanavi using HTML
+</div>
+
+</body>
+</html>
