@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: white;
+}
+
+.oform {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.oform .form-row {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    clear: both;
+}
+
+.oform .form-row label {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.oform .form-row input[type="text"],
+.oform .form-row input[type="tel"],
+.oform .form-row input[type="email"],
+.oform .form-row select,
+.oform .form-row textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oform .form-row textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.oform .form-row input[type="text"]:focus,
+.oform .form-row input[type="tel"]:focus,
+.oform .form-row input[type="email"]:focus,
+.oform .form-row select:focus,
+.oform .form-row textarea:focus {
+    background-color: #fafafa;
+    border-color: #28C2CF;
+    outline: none;
+}
+
+.oform .form-row input[type="text"]:required:invalid,
+.oform .form-row input[type="email"]:required:invalid, 
+.oform .form-row input[type="tel"]:required:invalid {
+    border-color: #cc6666;
+}
+
+.oform .form-row input[type="text"]:required:valid,
+.oform .form-row input[type="email"]:required:valid,
+.oform .form-row input[type="tel"]:required:valid {
+    border-color: #66aa66;
+}
+
+.oform .checkbox-row label {
+    display: inline-block;
+    width: auto;
+    font-weight: normal;
+}
+
+.oform .checkbox-row input[type="checkbox"] {
+    width: auto;
+    display: inline;
+    margin-right: 8px;
+}
+
+.oform .form-buttons {
+    margin-top: 20px;
+}
+
+.oform .form-buttons input[type="submit"],
+.oform .form-buttons input[type="reset"] {
+    width: auto;
+    display: inline-block;
+    padding: 8px 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oform .form-buttons input[type="submit"] {
+    background-color: #28C2CF;
+}
+
+.oform .form-buttons input[type="reset"] {
+    background-color: #888888;
+}
